@@ -1,0 +1,120 @@
+:root {
+    font-family: monospace;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* scroll-snap-type: y mandatory; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+    font-family: 'monospace', sans-serif;
+    background: #bfb0e6;
+}
+
+img {
+    max-width: 180px;
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100px;
+    }
+}
+
+.grid-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .grid-card {
+        width: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+    }
+}
+
+.title {
+    width: 1000px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: auto;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+    }
+}
+
+.title h1 {
+    font-weight: bold;
+    font-family: monospace;
+    color: #383838;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.title h2 {
+    font-weight: 700;
+    font-family: monospace;
+    text-transform: uppercase;
+    color: #383838;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+#result {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: monospace;
+    color: orangered;
+}
+
+.button-container {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        width: auto;
+    }
+}
+
+.button-style {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #383838;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
